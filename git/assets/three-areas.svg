@@ -1,36 +1,35 @@
-<svg width="720" height="220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Working Directory -->
-  <rect x="20" y="40" width="180" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
-  <text x="110" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Working Directory</text>
-  <text x="110" y="100" text-anchor="middle" font-size="13" fill="#334155">Your actual files</text>
-  <text x="110" y="120" text-anchor="middle" font-size="13" fill="#334155">on disk</text>
-  <text x="110" y="150" text-anchor="middle" font-size="12" fill="#64748b">(edit here)</text>
-
-  <!-- Arrow 1 -->
-  <path d="M210 110 L250 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="230" y="100" text-anchor="middle" font-size="12" fill="#475569">git add</text>
-
-  <!-- Staging Area -->
-  <rect x="260" y="40" width="180" height="140" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5"/>
-  <text x="350" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#15803d">Staging Area</text>
-  <text x="350" y="100" text-anchor="middle" font-size="13" fill="#334155">Files ready</text>
-  <text x="350" y="120" text-anchor="middle" font-size="13" fill="#334155">to be committed</text>
-  <text x="350" y="150" text-anchor="middle" font-size="12" fill="#64748b">(git add)</text>
-
-  <!-- Arrow 2 -->
-  <path d="M450 110 L490 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="470" y="100" text-anchor="middle" font-size="12" fill="#475569">git commit</text>
-
-  <!-- Repository -->
-  <rect x="500" y="40" width="180" height="140" rx="12" fill="#fefce8" stroke="#eab308" stroke-width="2.5"/>
-  <text x="590" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#a16207">Repository</text>
-  <text x="590" y="100" text-anchor="middle" font-size="13" fill="#334155">Saved snapshots</text>
-  <text x="590" y="120" text-anchor="middle" font-size="13" fill="#334155">(commits)</text>
-  <text x="590" y="150" text-anchor="middle" font-size="12" fill="#64748b">(permanent)</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="890" height="280" viewBox="0 0 890 280" role="img" aria-labelledby="t" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">Git's three areas: working directory, staging area and repository, with the commands that move changes between them</title>
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    <marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/>
     </marker>
   </defs>
+  <rect x="1" y="1" width="888" height="278" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="30" y="60" width="160" height="130" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="110.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1e3a8a">Working Directory</text>
+  <text x="110.0" y="122" text-anchor="middle" font-size="14" fill="#0f172a">Your files on disk</text>
+  <text x="110.0" y="144" text-anchor="middle" font-size="13" fill="#475569">You edit here</text>
+  <rect x="365" y="60" width="160" height="130" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+  <text x="445.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#134e4a">Staging Area</text>
+  <text x="445.0" y="122" text-anchor="middle" font-size="14" fill="#0f172a">Changes picked for</text>
+  <text x="445.0" y="144" text-anchor="middle" font-size="14" fill="#0f172a">the next commit</text>
+  <rect x="700" y="60" width="160" height="130" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2.5"/>
+  <text x="780.0" y="94" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#78350f">Repository</text>
+  <text x="780.0" y="122" text-anchor="middle" font-size="14" fill="#0f172a">Saved snapshots</text>
+  <text x="780.0" y="144" text-anchor="middle" font-size="13" fill="#475569">(commits)</text>
+  <line x1="196" y1="105" x2="359" y2="105" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="531" y1="105" x2="694" y2="105" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="243.3" y="70.0" width="68.4" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="277.5" y="85.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git add</text>
+  <rect x="567.5" y="70.0" width="90.0" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="612.5" y="85.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git commit</text>
+  <line x1="359" y1="155" x2="196" y2="155" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+  <line x1="694" y1="155" x2="531" y2="155" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+  <rect x="228.9" y="170.0" width="97.2" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="277.5" y="185.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git restore</text>
+  <rect x="531.5" y="170.0" width="162.0" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="612.5" y="185.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git restore --staged</text>
+  <text x="445.0" y="252" text-anchor="middle" font-size="14" fill="#475569">Solid arrows move work forward. Dashed arrows undo it.</text>
+
 </svg>

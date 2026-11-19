@@ -1,4 +1,4 @@
-\# Git Cheatsheet (20/80 Rule)
+# Git Cheatsheet (20/80 Rule)
 
 The 20% of Git commands that cover ~80% of everyday work.  
 Simple language. Accurate diagrams. Useful flags included.
@@ -58,7 +58,7 @@ git config user.name              # check one value
 
 Git always works with **three areas**:
 
-[three-areas](/assets/three-areas.svg)
+![Git's three areas: working directory, staging area and repository](assets/three-areas.svg)
 
 **Mental model**  
 1. You edit files in the **Working Directory**  
@@ -93,7 +93,7 @@ git pull --ff-only
 
 ### Visual of the daily loop
 
-[daily-loop](/assets/daily-loop.svg)
+![Daily loop: edit, add, commit, pull, push](assets/daily-loop.svg)
 
 ---
 
@@ -166,7 +166,7 @@ git rm -r --cached foldername/
 
 A branch is just a movable label that points to a commit.
 
-[branches](/assets/branches.svg)
+![A feature branch splits off main and merges back](assets/branches.svg)
 
 ### Branch commands you actually need
 ```bash
@@ -261,7 +261,7 @@ git pull --rebase
 
 ### Local vs Remote picture
 
-[local-vs-remote-picture](/assets/local-vs-remote.svg)
+![Local versus remote: push, fetch and pull](assets/local-vs-remote.svg)
 
 ---
 

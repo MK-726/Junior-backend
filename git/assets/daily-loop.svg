@@ -1,25 +1,33 @@
-<svg width="680" height="160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="230" viewBox="0 0 920 230" role="img" aria-labelledby="t" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">Daily Git loop: edit files, git add, git commit, git pull, git push, then repeat</title>
   <defs>
-    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    <marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/>
     </marker>
   </defs>
+  <rect x="1" y="1" width="918" height="228" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="30" y="40" width="140" height="84" rx="12" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="100.0" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1e3a8a">Edit files</text>
+  <text x="100.0" y="102" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#475569">change code</text>
+  <rect x="210" y="40" width="140" height="84" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+  <text x="280.0" y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#134e4a">git add</text>
+  <text x="280.0" y="102" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#475569">stage changes</text>
+  <rect x="390" y="40" width="140" height="84" rx="12" fill="#fef3c7" stroke="#b45309" stroke-width="2.5"/>
+  <text x="460.0" y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#78350f">git commit</text>
+  <text x="460.0" y="102" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#475569">take a snapshot</text>
+  <rect x="570" y="40" width="140" height="84" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="640.0" y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#4c1d95">git pull</text>
+  <text x="640.0" y="102" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#475569">--ff-only</text>
+  <rect x="750" y="40" width="140" height="84" rx="12" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="820.0" y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#4c1d95">git push</text>
+  <text x="820.0" y="102" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#475569">share it</text>
+  <line x1="176" y1="82.0" x2="204" y2="82.0" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="356" y1="82.0" x2="384" y2="82.0" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="536" y1="82.0" x2="564" y2="82.0" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="716" y1="82.0" x2="744" y2="82.0" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <path d="M820.0 128 V170 H100.0 V134" fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#ah)" stroke-linejoin="round"/>
+  <rect x="429.4" y="159.0" width="61.2" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="460.0" y="174.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">repeat</text>
+  <text x="460.0" y="216" text-anchor="middle" font-size="13" fill="#475569">Run git status -sb at any point to see where you are.</text>
 
-  <!-- Boxes -->
-  <rect x="20"  y="50" width="120" height="60" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
-  <text x="80"  y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#0c4a6e">Edit files</text>
-
-  <rect x="190" y="50" width="120" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-  <text x="250" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#14532d">git add</text>
-
-  <rect x="360" y="50" width="120" height="60" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
-  <text x="420" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#713f12">git commit</text>
-
-  <rect x="530" y="50" width="120" height="60" rx="10" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
-  <text x="590" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#581c87">git push</text>
-
-  <!-- Arrows -->
-  <path d="M145 80 L185 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
-  <path d="M315 80 L355 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
-  <path d="M485 80 L525 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
 </svg>

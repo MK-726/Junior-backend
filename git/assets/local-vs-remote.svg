@@ -1,28 +1,32 @@
-<svg width="640" height="200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Local box -->
-  <rect x="30" y="30" width="240" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
-  <text x="150" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Your Computer</text>
-  <text x="150" y="90" text-anchor="middle" font-size="13" fill="#334155">Local repository</text>
-  <text x="150" y="115" text-anchor="middle" font-size="13" fill="#334155">+ working files</text>
-  <text x="150" y="145" text-anchor="middle" font-size="12" fill="#64748b">git commit happens here</text>
-
-  <!-- Arrows -->
-  <path d="M280 80 L360 80" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="320" y="70" text-anchor="middle" font-size="12" fill="#475569">git push</text>
-  
-  <path d="M360 120 L280 120" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="320" y="145" text-anchor="middle" font-size="12" fill="#475569">git pull / fetch</text>
-
-  <!-- Remote box -->
-  <rect x="370" y="30" width="240" height="140" rx="12" fill="#faf5ff" stroke="#a855f7" stroke-width="2.5"/>
-  <text x="490" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#7e22ce">GitHub / Remote</text>
-  <text x="490" y="90" text-anchor="middle" font-size="13" fill="#334155">Shared repository</text>
-  <text x="490" y="115" text-anchor="middle" font-size="13" fill="#334155">for the team</text>
-  <text x="490" y="145" text-anchor="middle" font-size="12" fill="#64748b">source of truth</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330" role="img" aria-labelledby="t" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">Local versus remote: git push sends commits to GitHub, git fetch updates origin/main, and git pull adds a merge into main</title>
   <defs>
-    <marker id="arr" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0, 9 3, 0 6" fill="#64748b"/>
+    <marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 4 L0 8 Z" fill="#64748b"/>
     </marker>
   </defs>
+  <rect x="1" y="1" width="818" height="328" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="30" y="30" width="360" height="240" rx="14" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="54" y="62" font-size="16" font-weight="700" fill="#1e3a8a">Your computer</text>
+  <rect x="520" y="30" width="270" height="240" rx="14" fill="#ffffff" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="544" y="62" font-size="16" font-weight="700" fill="#4c1d95">GitHub (origin)</text>
+  <rect x="54" y="84" width="312" height="60" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="210.0" y="111.0" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#1e3a8a">main</text>
+  <text x="210.0" y="131.0" text-anchor="middle" font-size="12.5" fill="#475569">your files and commits</text>
+  <rect x="54" y="196" width="312" height="60" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="210.0" y="223.0" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#1e3a8a">origin/main</text>
+  <text x="210.0" y="243.0" text-anchor="middle" font-size="12.5" fill="#475569">your last known copy of the remote</text>
+  <rect x="544" y="84" width="222" height="172" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="655.0" y="167.0" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#4c1d95">main</text>
+  <text x="655.0" y="187.0" text-anchor="middle" font-size="12.5" fill="#475569">shared copy for the team</text>
+  <line x1="372" y1="114" x2="538" y2="114" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="417.2" y="79.0" width="75.6" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="455" y="94.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git push</text>
+  <line x1="538" y1="226" x2="372" y2="226" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="413.6" y="191.0" width="82.8" height="22" rx="11.0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="455" y="206.2" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#0f172a">git fetch</text>
+  <line x1="210" y1="190" x2="210" y2="152" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="224" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" font-weight="600" fill="#0f172a">merge</text>
+  <text x="410.0" y="306" text-anchor="middle" font-size="14" fill="#475569">git pull = git fetch + merge. With --ff-only it refuses to create a merge commit.</text>
+
 </svg>
