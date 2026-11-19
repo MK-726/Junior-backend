@@ -1,0 +1,36 @@
+<svg width="720" height="220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Working Directory -->
+  <rect x="20" y="40" width="180" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
+  <text x="110" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Working Directory</text>
+  <text x="110" y="100" text-anchor="middle" font-size="13" fill="#334155">Your actual files</text>
+  <text x="110" y="120" text-anchor="middle" font-size="13" fill="#334155">on disk</text>
+  <text x="110" y="150" text-anchor="middle" font-size="12" fill="#64748b">(edit here)</text>
+
+  <!-- Arrow 1 -->
+  <path d="M210 110 L250 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="230" y="100" text-anchor="middle" font-size="12" fill="#475569">git add</text>
+
+  <!-- Staging Area -->
+  <rect x="260" y="40" width="180" height="140" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="350" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#15803d">Staging Area</text>
+  <text x="350" y="100" text-anchor="middle" font-size="13" fill="#334155">Files ready</text>
+  <text x="350" y="120" text-anchor="middle" font-size="13" fill="#334155">to be committed</text>
+  <text x="350" y="150" text-anchor="middle" font-size="12" fill="#64748b">(git add)</text>
+
+  <!-- Arrow 2 -->
+  <path d="M450 110 L490 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="470" y="100" text-anchor="middle" font-size="12" fill="#475569">git commit</text>
+
+  <!-- Repository -->
+  <rect x="500" y="40" width="180" height="140" rx="12" fill="#fefce8" stroke="#eab308" stroke-width="2.5"/>
+  <text x="590" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#a16207">Repository</text>
+  <text x="590" y="100" text-anchor="middle" font-size="13" fill="#334155">Saved snapshots</text>
+  <text x="590" y="120" text-anchor="middle" font-size="13" fill="#334155">(commits)</text>
+  <text x="590" y="150" text-anchor="middle" font-size="12" fill="#64748b">(permanent)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="640" height="200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Local box -->
+  <rect x="30" y="30" width="240" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
+  <text x="150" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Your Computer</text>
+  <text x="150" y="90" text-anchor="middle" font-size="13" fill="#334155">Local repository</text>
+  <text x="150" y="115" text-anchor="middle" font-size="13" fill="#334155">+ working files</text>
+  <text x="150" y="145" text-anchor="middle" font-size="12" fill="#64748b">git commit happens here</text>
+
+  <!-- Arrows -->
+  <path d="M280 80 L360 80" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="320" y="70" text-anchor="middle" font-size="12" fill="#475569">git push</text>
+  
+  <path d="M360 120 L280 120" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="320" y="145" text-anchor="middle" font-size="12" fill="#475569">git pull / fetch</text>
+
+  <!-- Remote box -->
+  <rect x="370" y="30" width="240" height="140" rx="12" fill="#faf5ff" stroke="#a855f7" stroke-width="2.5"/>
+  <text x="490" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#7e22ce">GitHub / Remote</text>
+  <text x="490" y="90" text-anchor="middle" font-size="13" fill="#334155">Shared repository</text>
+  <text x="490" y="115" text-anchor="middle" font-size="13" fill="#334155">for the team</text>
+  <text x="490" y="145" text-anchor="middle" font-size="12" fill="#64748b">source of truth</text>
+
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 9 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

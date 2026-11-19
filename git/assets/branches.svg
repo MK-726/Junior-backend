@@ -1,0 +1,35 @@
+<svg width="700" height="260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Main line -->
+  <line x1="40" y1="80" x2="660" y2="80" stroke="#94a3b8" stroke-width="3"/>
+  
+  <!-- Commits on main -->
+  <circle cx="80"  cy="80" r="12" fill="#3b82f6"/>
+  <circle cx="180" cy="80" r="12" fill="#3b82f6"/>
+  <circle cx="280" cy="80" r="12" fill="#3b82f6"/>
+  <circle cx="480" cy="80" r="12" fill="#3b82f6"/>
+  <circle cx="600" cy="80" r="12" fill="#3b82f6"/>
+
+  <!-- Branch line -->
+  <path d="M280 80 Q 320 80 340 140" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <line x1="340" y1="140" x2="520" y2="140" stroke="#f59e0b" stroke-width="3"/>
+  
+  <!-- Commits on feature branch -->
+  <circle cx="380" cy="140" r="12" fill="#f59e0b"/>
+  <circle cx="480" cy="140" r="12" fill="#f59e0b"/>
+
+  <!-- Labels -->
+  <text x="80"  y="50" text-anchor="middle" font-size="13" fill="#1e40af" font-weight="600">main</text>
+  <text x="180" y="50" text-anchor="middle" font-size="12" fill="#64748b">C1</text>
+  <text x="280" y="50" text-anchor="middle" font-size="12" fill="#64748b">C2</text>
+  <text x="480" y="50" text-anchor="middle" font-size="12" fill="#64748b">C4</text>
+  <text x="600" y="50" text-anchor="middle" font-size="12" fill="#64748b">C5</text>
+
+  <text x="430" y="175" text-anchor="middle" font-size="13" fill="#b45309" font-weight="600">feature branch</text>
+  <text x="380" y="175" text-anchor="middle" font-size="12" fill="#64748b">C3a</text>
+  <text x="480" y="175" text-anchor="middle" font-size="12" fill="#64748b">C3b</text>
+
+  <!-- Explanation -->
+  <text x="350" y="230" text-anchor="middle" font-size="14" fill="#334155">
+    You create a branch → work safely → merge back into main when ready
+  </text>
+</svg>

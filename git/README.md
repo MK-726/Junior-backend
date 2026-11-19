@@ -58,44 +58,7 @@ git config user.name              # check one value
 
 Git always works with **three areas**:
 
-```svg
-<svg width="720" height="220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Working Directory -->
-  <rect x="20" y="40" width="180" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
-  <text x="110" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Working Directory</text>
-  <text x="110" y="100" text-anchor="middle" font-size="13" fill="#334155">Your actual files</text>
-  <text x="110" y="120" text-anchor="middle" font-size="13" fill="#334155">on disk</text>
-  <text x="110" y="150" text-anchor="middle" font-size="12" fill="#64748b">(edit here)</text>
-
-  <!-- Arrow 1 -->
-  <path d="M210 110 L250 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="230" y="100" text-anchor="middle" font-size="12" fill="#475569">git add</text>
-
-  <!-- Staging Area -->
-  <rect x="260" y="40" width="180" height="140" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5"/>
-  <text x="350" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#15803d">Staging Area</text>
-  <text x="350" y="100" text-anchor="middle" font-size="13" fill="#334155">Files ready</text>
-  <text x="350" y="120" text-anchor="middle" font-size="13" fill="#334155">to be committed</text>
-  <text x="350" y="150" text-anchor="middle" font-size="12" fill="#64748b">(git add)</text>
-
-  <!-- Arrow 2 -->
-  <path d="M450 110 L490 110" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="470" y="100" text-anchor="middle" font-size="12" fill="#475569">git commit</text>
-
-  <!-- Repository -->
-  <rect x="500" y="40" width="180" height="140" rx="12" fill="#fefce8" stroke="#eab308" stroke-width="2.5"/>
-  <text x="590" y="75" text-anchor="middle" font-size="16" font-weight="700" fill="#a16207">Repository</text>
-  <text x="590" y="100" text-anchor="middle" font-size="13" fill="#334155">Saved snapshots</text>
-  <text x="590" y="120" text-anchor="middle" font-size="13" fill="#334155">(commits)</text>
-  <text x="590" y="150" text-anchor="middle" font-size="12" fill="#64748b">(permanent)</text>
-
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
-    </marker>
-  </defs>
-</svg>
-```
+[three-areas](/assets/three-areas.svg)
 
 **Mental model**  
 1. You edit files in the **Working Directory**  
@@ -130,33 +93,7 @@ git pull --ff-only
 
 ### Visual of the daily loop
 
-```svg
-<svg width="680" height="160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <defs>
-    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
-    </marker>
-  </defs>
-
-  <!-- Boxes -->
-  <rect x="20"  y="50" width="120" height="60" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
-  <text x="80"  y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#0c4a6e">Edit files</text>
-
-  <rect x="190" y="50" width="120" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-  <text x="250" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#14532d">git add</text>
-
-  <rect x="360" y="50" width="120" height="60" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
-  <text x="420" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#713f12">git commit</text>
-
-  <rect x="530" y="50" width="120" height="60" rx="10" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
-  <text x="590" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#581c87">git push</text>
-
-  <!-- Arrows -->
-  <path d="M145 80 L185 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
-  <path d="M315 80 L355 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
-  <path d="M485 80 L525 80" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
-</svg>
-```
+[daily-loop](/assets/daily-loop.svg)
 
 ---
 
@@ -229,43 +166,7 @@ git rm -r --cached foldername/
 
 A branch is just a movable label that points to a commit.
 
-```svg
-<svg width="700" height="260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Main line -->
-  <line x1="40" y1="80" x2="660" y2="80" stroke="#94a3b8" stroke-width="3"/>
-  
-  <!-- Commits on main -->
-  <circle cx="80"  cy="80" r="12" fill="#3b82f6"/>
-  <circle cx="180" cy="80" r="12" fill="#3b82f6"/>
-  <circle cx="280" cy="80" r="12" fill="#3b82f6"/>
-  <circle cx="480" cy="80" r="12" fill="#3b82f6"/>
-  <circle cx="600" cy="80" r="12" fill="#3b82f6"/>
-
-  <!-- Branch line -->
-  <path d="M280 80 Q 320 80 340 140" stroke="#f59e0b" stroke-width="3" fill="none"/>
-  <line x1="340" y1="140" x2="520" y2="140" stroke="#f59e0b" stroke-width="3"/>
-  
-  <!-- Commits on feature branch -->
-  <circle cx="380" cy="140" r="12" fill="#f59e0b"/>
-  <circle cx="480" cy="140" r="12" fill="#f59e0b"/>
-
-  <!-- Labels -->
-  <text x="80"  y="50" text-anchor="middle" font-size="13" fill="#1e40af" font-weight="600">main</text>
-  <text x="180" y="50" text-anchor="middle" font-size="12" fill="#64748b">C1</text>
-  <text x="280" y="50" text-anchor="middle" font-size="12" fill="#64748b">C2</text>
-  <text x="480" y="50" text-anchor="middle" font-size="12" fill="#64748b">C4</text>
-  <text x="600" y="50" text-anchor="middle" font-size="12" fill="#64748b">C5</text>
-
-  <text x="430" y="175" text-anchor="middle" font-size="13" fill="#b45309" font-weight="600">feature branch</text>
-  <text x="380" y="175" text-anchor="middle" font-size="12" fill="#64748b">C3a</text>
-  <text x="480" y="175" text-anchor="middle" font-size="12" fill="#64748b">C3b</text>
-
-  <!-- Explanation -->
-  <text x="350" y="230" text-anchor="middle" font-size="14" fill="#334155">
-    You create a branch → work safely → merge back into main when ready
-  </text>
-</svg>
-```
+[branches](/assets/branches.svg)
 
 ### Branch commands you actually need
 ```bash
@@ -360,36 +261,7 @@ git pull --rebase
 
 ### Local vs Remote picture
 
-```svg
-<svg width="640" height="200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Local box -->
-  <rect x="30" y="30" width="240" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2.5"/>
-  <text x="150" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#0369a1">Your Computer</text>
-  <text x="150" y="90" text-anchor="middle" font-size="13" fill="#334155">Local repository</text>
-  <text x="150" y="115" text-anchor="middle" font-size="13" fill="#334155">+ working files</text>
-  <text x="150" y="145" text-anchor="middle" font-size="12" fill="#64748b">git commit happens here</text>
-
-  <!-- Arrows -->
-  <path d="M280 80 L360 80" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="320" y="70" text-anchor="middle" font-size="12" fill="#475569">git push</text>
-  
-  <path d="M360 120 L280 120" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="320" y="145" text-anchor="middle" font-size="12" fill="#475569">git pull / fetch</text>
-
-  <!-- Remote box -->
-  <rect x="370" y="30" width="240" height="140" rx="12" fill="#faf5ff" stroke="#a855f7" stroke-width="2.5"/>
-  <text x="490" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#7e22ce">GitHub / Remote</text>
-  <text x="490" y="90" text-anchor="middle" font-size="13" fill="#334155">Shared repository</text>
-  <text x="490" y="115" text-anchor="middle" font-size="13" fill="#334155">for the team</text>
-  <text x="490" y="145" text-anchor="middle" font-size="12" fill="#64748b">source of truth</text>
-
-  <defs>
-    <marker id="arr" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0, 9 3, 0 6" fill="#64748b"/>
-    </marker>
-  </defs>
-</svg>
-```
+[local-vs-remote-picture](/assets/local-vs-remote.svg)
 
 ---
 
