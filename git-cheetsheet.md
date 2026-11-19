@@ -433,4 +433,3 @@ git pull --rebase
 ---
 
 *Made for people who want the useful 20%, not the entire manual.*
-```
