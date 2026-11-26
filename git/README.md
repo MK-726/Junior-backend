@@ -10,12 +10,14 @@ Simple language. Accurate diagrams. Useful flags included.
 Do this once on a new machine.
 
 ### Essential identity
+
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@email.com"
 ```
 
 ### Recommended settings
+
 ```bash
 # Use main as the default branch name
 git config --global init.defaultBranch main
@@ -33,6 +35,7 @@ git config --global core.editor "code --wait"   # VS Code
 ```
 
 ### Useful aliases (optional but powerful)
+
 ```bash
 git config --global alias.st "status -sb"
 git config --global alias.lg "log --oneline --graph --decorate --all"
@@ -43,6 +46,7 @@ git config --global alias.last "log -1 HEAD"
 ```
 
 ### Check your configuration
+
 ```bash
 git config --list                 # all settings
 git config --global --list        # only global
@@ -58,9 +62,12 @@ git config user.name              # check one value
 
 Git always works with **three areas**:
 
-![Git's three areas: working directory, staging area and repository](assets/three-areas.svg)
+<p align="center">
+    <image alt="Git's three areas: working directory, staging area and repository" src="assets/three-areas.svg"/>
+</p>
 
 **Mental model**  
+
 1. You edit files in the **Working Directory**  
 2. You choose which changes to save with `git add` → they go to the **Staging Area**  
 3. You take a snapshot with `git commit` → it goes into the **Repository**
@@ -93,7 +100,9 @@ git pull --ff-only
 
 ### Visual of the daily loop
 
-![Daily loop: edit, add, commit, pull, push](assets/daily-loop.svg)
+<p align="center">
+    <image alt="Daily loop: edit, add, commit, pull, push" src="assets/daily-loop.svg" />
+</p>
 
 ---
 
@@ -117,6 +126,7 @@ cd repo
 Create a file named `.gitignore` in the root of your project.
 
 ### Common patterns
+
 ```gitignore
 # Dependencies
 node_modules/
@@ -147,6 +157,7 @@ Thumbs.db
 ```
 
 ### Useful commands
+
 ```bash
 # Check what is ignored
 git status --ignored
@@ -166,7 +177,9 @@ git rm -r --cached foldername/
 
 A branch is just a movable label that points to a commit.
 
-![A feature branch splits off main and merges back](assets/branches.svg)
+<p align="center">
+    <image alt="A feature branch splits off main and merges back" src="assets/branches.svg" />
+</p>
 
 ### Branch commands you actually need
 ```bash
@@ -232,6 +245,7 @@ git log -5 --oneline
 \* Only amend if you have **not** pushed yet.
 
 **Rule of thumb**  
+
 - Already pushed? Prefer `git revert`  
 - Only local? `git reset` or `--amend` is fine
 
@@ -261,7 +275,9 @@ git pull --rebase
 
 ### Local vs Remote picture
 
-![Local versus remote: push, fetch and pull](assets/local-vs-remote.svg)
+<p align="center">
+    <image alt="Local versus remote: push, fetch and pull" src="assets/local-vs-remote.svg" />
+</p>
 
 ---
 
